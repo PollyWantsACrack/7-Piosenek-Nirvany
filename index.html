@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Piosenek Nirvany</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img width=170 height=100 src="data/logo.jpg" alt="Logo">
+    </div>
+    <h1>7 Piosenek Nirvany</h1>
+    <div class="ph-line-nav nav">
+        <a href="#1">Lista Piosenek</a>
+        <a href="#2">Quiz</a>
+        <a href="#3">Galeria</a>
+        <a href="#4">Więcej</a>
+        <div class="effect"></div>
+      </div>
+</header>
+
+<div class="container">
+    <div class="bottom-left" id="1">
+        <ol class="bleach-list">
+            <li>Blew</li>
+            <li>Floyd the Barber</li>
+            <li>About a Girl</li>
+            <li>School</li>
+            <li>Love Buzz</li>
+            <li>Paper Cuts</li>
+            <li>Negative Creep</li>
+            
+        </ol>
+    </div>
+    <div class="slide">
+        <img id="changingImage" src="img1.jpg" alt="Zdjęcie">
+    </div>
+    <div class="top-left">
+        <form id="2">
+            <ol>
+               
+                <li>
+                    <p>Jaki utwór zespół Nirvana wykonał w koncercie MTV Unplugged in New York?</p>
+                    <input type="text" name="pytanie3">
+                </li>
+                <li>
+                    <p>Jakie miasto w stanie Waszyngton jest związane z początkami zespołu Nirvana?</p>
+                    <input type="text" name="pytanie4">
+                </li>
+                <li>
+                    <p>Kto był liderem i wokalistą zespołu Nirvana?</p>
+                    <input type="text" name="pytanie5">
+                </li>
+            </ol>
+            <input type="submit" value="Wyślij">
+        </form>
+    </div>
+    <div style="overflow-x:auto;"class="top-right">
+        <table>
+            <caption>Popularność Piosenek Nirvany</caption>
+            <thead>
+                <tr>
+                    <th>Nazwa Piosenki</th>
+                    <th>Ogólne odsłuchania</th>
+                    <th>Dzienne odsłuchania</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Blew</td>
+                    <td>1,829,114,243</td>
+                    <td>968,477</td>
+                </tr>
+                <tr>
+                    <td>Floyd the Barbere</td>
+                    <td>970,627</td>
+                    <td>647529</td>
+                </tr>
+                <tr>
+                    <td>About a Girl</td>
+                    <td>836,251</td>
+                    <td>939,572</td>
+                </tr>
+                <tr>
+                    <td>School</td>
+                    <td>827,583</td>
+                    <td>740,801</td>
+                </tr>
+                <tr>
+                    <td>Love Buzz</td>
+                    <td>639,888</td>
+                    <td>359,473</td>
+                </tr>
+                <tr>
+                    <td>Paper Cuts</td>
+                    <td>76,0981	</td>
+                    <td>359,473</td>
+                </tr>
+                <tr>
+                    <td>Negative Creep</td>
+                    <td>831,324</td>
+                    <td>349,673</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="bottom-right" id="3">
+        <img src="data/nirvana.jpg" alt="Zdjęcie" class="mg1">
+    </div>
+
+    
+    <script>
+        let currentImage = 1; 
+const totalImages = 3; 
+
+function changeImage() {
+  currentImage = (currentImage % totalImages) + 1; 
+  const imageElement = document.getElementById('changingImage');
+  imageElement.src = `data/zdj${currentImage}.jpg`;
+}
+
+setInterval(changeImage, 2000);
+
+    </script>
+    <div class="podstrony" id="4">
+    <div class="but1"> <a href="index1.html">Koncerty</a> </div>
+    <div class="but2"> <a href="index2.html">Kup Koszulkę</a> </div>
+    </div>
+</div>
+
+<footer>
+    <p> 	&#9400; Franciszek Klykocinski</p>
+</footer>
+
+</body>
+</html>
+

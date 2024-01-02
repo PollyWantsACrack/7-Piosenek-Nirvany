@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 380vh;
+    background-image: linear-gradient(red,orange, yellow,green,blue,purple);    
+}
+
+header {
+   
+    text-align: center;
+    background-color: brown;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 2px;
+    border-color: rgb(160, 0, 0);
+    border-style: dotted;
+}
+
+
+
+footer {
+    width: 100%;
+    position:fixed;
+    bottom:0;
+    text-align: center;
+    background-color: #0e004f;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+
+
+.nav {
+  height: 50px;
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  margin: 2em auto;
+  width: 480px;
+  position: relative; }
+  .nav a {
+    display: block;
+    position: relative;
+    float: left;
+    padding: 1em 0 2em;
+    width: 25%;
+    text-decoration: none;
+    color: #393939;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -o-transition: .7s;
+    -ms-transition: .7s;
+    transition: .7s; }
+    .nav a:hover {
+      color: #c6342e; }
+
+.effect {
+  position: absolute;
+  left: -12.5%;
+  -webkit-transition: 0.7s ease-in-out;
+  -moz-transition: 0.7s ease-in-out;
+  -o-transition: 0.7s ease-in-out;
+  -ms-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out; }
+
+  .nav a:nth-child(1):hover ~ .effect {
+    left: 12.5%; }
+  .nav a:nth-child(2):hover ~ .effect {
+    left: 37.5%; }
+  .nav a:nth-child(3):hover ~ .effect {
+    left: 62.5%; }
+  .nav a:nth-child(4):hover ~ .effect {
+    left: 87.5%; }
+
+
+.ph-line-nav .effect {
+  width: 90px;
+  height: 2px;
+  bottom: 36px;
+  background: #c6342e;
+  box-shadow: 0 1px 0 white; 
+  margin-left:-45px;
+}
+
+
+.logo{
+  height: 40px;
+  width: 40px;
+}
+  /*Środek Kontenera */
+
+  .top-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: yellow;
+    background-color: lightyellow;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .top-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    border-color: green;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+  .bottom-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightsalmon;
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .bottom-right{
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 15px;
+    border-collapse: collapse;
+  }
+  tr{
+    border-collapse: collapse;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px;
+    
+
+  }
+  td{
+    border-collapse: collapse;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px;
+
+  }
+
+  
+  .mg1{
+
+    position: relative;
+    animation-name: animacja;
+    height: 200px;
+    width: 200px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes animacja{
+    0% { left:0px; top:0px; }
+    10% { left:0px; top:-50px; }
+    20% { left:50px; top:-50px; }
+    40% { left:50px; top:50px;}
+    60% {left: -50px; top:50px;}
+    80% {left: -50px; top: -50px}
+    90% {left:0px; top: -50px;}
+    100% {left:0px; top: 0px;}
+    
+
+  }
+
+
+
+  
+  
+
+
+.slide{
+  height: 400px;
+  background-color: rgb(255, 205, 113);
+  border-color: orange;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.podstrony {
+  height: 400px;
+  background-color: rgb(174, 123, 174);
+  border-color:purple;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.but1,
+.but2 {
+  height: 80px; 
+  width: 160px; 
+  margin: 0 10px;
+  padding: 10px 15px; 
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  
+}
+
+.but1 a,
+.but2 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.but1:hover,
+.but2:hover
+{
+  cursor: crosshair;
+  height: 80px; 
+  width: 160px; 
+  margin: 0 10px;
+  padding: 10px 15px; 
+  background-color: #b1b1b1;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #333;
+
+}
+
+@media (max-width: 599px) {
+  
+  .menu {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .top-left, .top-right, .bottom-left, .bottom-right {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .slide, .podstrony {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+  .menu {
+    width: 250px;
+    min-width: 250px;
+    margin-left: 10px;
+  }
+
+  .top-left, .top-right, .bottom-left, .bottom-right {
+    display: inline-block;
+    width: 250px;
+    margin: 0 10px;
+  }
+
+  .slide, .podstrony {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .menu {
+    width: 300px;
+    min-width: 300px;
+    margin-left: 20px;
+  }
+
+  .slide, .podstrony {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .but1, .but2 {
+    width: 200px;
+    margin-right: 10px;
+  }
+}
